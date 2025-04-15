@@ -15,6 +15,7 @@ multidict==6.4.3
 packaging==24.2
 propcache==0.3.1
 PyJWT==2.10.1
+python-dotenv==1.1.0
 requests==2.32.3
 schema==0.7.7
 sqlparse==0.5.3

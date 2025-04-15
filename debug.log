@@ -1,0 +1,54 @@
+Internal Server Error: /ussd/
+Traceback (most recent call last):
+  File "/Users/mac/Documents/zidisave/venv/lib/python3.13/site-packages/django/core/handlers/exception.py", line 55, in inner
+    response = get_response(request)
+  File "/Users/mac/Documents/zidisave/venv/lib/python3.13/site-packages/django/core/handlers/base.py", line 197, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "/Users/mac/Documents/zidisave/venv/lib/python3.13/site-packages/django/views/decorators/csrf.py", line 56, in wrapper_view
+    return view_func(*args, **kwargs)
+  File "/Users/mac/Documents/zidisave/core/views.py", line 31, in ussd_callback
+    twilio_client = Client(
+        os.environ.get("TWILIO_ACCOUNT_SID"),
+        os.environ.get("TWILIO_AUTH_TOKEN")
+    )
+  File "/Users/mac/Documents/zidisave/venv/lib/python3.13/site-packages/twilio/rest/__init__.py", line 113, in __init__
+    super().__init__(
+    ~~~~~~~~~~~~~~~~^
+        username,
+        ^^^^^^^^^
+    ...<6 lines>...
+        user_agent_extensions,
+        ^^^^^^^^^^^^^^^^^^^^^^
+    )
+    ^
+  File "/Users/mac/Documents/zidisave/venv/lib/python3.13/site-packages/twilio/base/client_base.py", line 53, in __init__
+    raise TwilioException("Credentials are required to create a TwilioClient")
+twilio.base.exceptions.TwilioException: Credentials are required to create a TwilioClient
+"POST /ussd/ HTTP/1.1" 500 145
+Internal Server Error: /ussd/
+Traceback (most recent call last):
+  File "/Users/mac/Documents/zidisave/venv/lib/python3.13/site-packages/django/core/handlers/exception.py", line 55, in inner
+    response = get_response(request)
+  File "/Users/mac/Documents/zidisave/venv/lib/python3.13/site-packages/django/core/handlers/base.py", line 197, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "/Users/mac/Documents/zidisave/venv/lib/python3.13/site-packages/django/views/decorators/csrf.py", line 56, in wrapper_view
+    return view_func(*args, **kwargs)
+  File "/Users/mac/Documents/zidisave/core/views.py", line 31, in ussd_callback
+    twilio_client = Client(
+        os.environ.get("TWILIO_ACCOUNT_SID"),
+        os.environ.get("TWILIO_AUTH_TOKEN")
+    )
+  File "/Users/mac/Documents/zidisave/venv/lib/python3.13/site-packages/twilio/rest/__init__.py", line 113, in __init__
+    super().__init__(
+    ~~~~~~~~~~~~~~~~^
+        username,
+        ^^^^^^^^^
+    ...<6 lines>...
+        user_agent_extensions,
+        ^^^^^^^^^^^^^^^^^^^^^^
+    )
+    ^
+  File "/Users/mac/Documents/zidisave/venv/lib/python3.13/site-packages/twilio/base/client_base.py", line 53, in __init__
+    raise TwilioException("Credentials are required to create a TwilioClient")
+twilio.base.exceptions.TwilioException: Credentials are required to create a TwilioClient
+"POST /ussd/ HTTP/1.1" 500 145
