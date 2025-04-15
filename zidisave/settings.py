@@ -25,7 +25,7 @@ SECRET_KEY = 'django-insecure-1r4i1v%c99g@0(o+0vk79$7fl!-vg8)pb*sf3qy%61d$p*-6v2
 # SECURITY WARNING: don't run with debug turned on in production!
 DEBUG = True
 
-ALLOWED_HOSTS = ['localhost', '127.0.0.1', 'zidisave.render.com']
+ALLOWED_HOSTS = ['localhost', '127.0.0.1', 'https://zidisave.onrender.com/', 'zidisave.onrender.com']
 
 # Application definition
 
